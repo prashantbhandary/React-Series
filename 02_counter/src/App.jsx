@@ -5,8 +5,14 @@ function App() {
   const add =()=>{
     if(counter<20)
     { 
-      counter=counter+1
-      setCounter(counter)
+      setCounter(counter+1)
+      // setCounter(prevCounter => prevCounter+1)
+      // setCounter(prevCounter => prevCounter+1)
+      // setCounter(prevCounter => prevCounter+1)
+
+      //this for increment in 2 times while clicking one...
+
+      
     }
     else{
       alert("Can't exceed 20")

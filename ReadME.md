@@ -19,6 +19,17 @@
 - I created a 02_counter project where I used `useState` to update the counter variable. It changes as I increment or decrement the count.
 - I added a condition to keep the counter within a range of 0 to 20, ensuring it doesn’t go negative or exceed the maximum limit.
 
-That’s what I worked on today!
+- **Virtualdoms Fibre and Reconcilation**
+    - Follow this documentation: [React Fiber](https://github.com/acdlite/react-fiber-architecture)
 
 ## Day 3
+
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+
+    content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  
