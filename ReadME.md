@@ -24,12 +24,29 @@
 
 ## Day 3
 
-    npm install -D tailwindcss postcss autoprefixer
-    npx tailwindcss init -p
+- Setup Tailwind CSS with React and Vite
+    - **Install dependencies**:
+      ```bash
+        npm install -D tailwindcss postcss autoprefixer
+        npx tailwindcss init -p
 
-    content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+        Edit content by: 
+
+        content: [
+         "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+        ],
+
+        And css by this:
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        npm run dev
+
+- Today, I learned to create a custom version of React to gain a deeper understanding of how React operates under the hood. In `04_custom_react.js`, we access the HTML DOM directly and define an object that consists of types, props, and other attributes. This object is then passed to a custom `render` function, similar to how React's render process works.
+
+- Our custom `render` function creates DOM elements based on these objects, assigns various attributes, and finally appends the elements to the DOM. This demonstrates the basic mechanism of React: using objects to represent UI components, rendering them into the DOM, and updating elements as needed. Through this process, we get a simplified but insightful look at React's virtual DOM and rendering principles.
+
 
   

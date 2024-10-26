@@ -1,6 +1,6 @@
 
 
-function customRander(reactElement,mainContainer){
+function customRender(reactElement,mainContainer){
     // const domElement = document.createElement(reactElement.type)
     // domElement.innerHTML = reactElement.children
     // domElement.setAttribute('href', reactElement.props.href)
@@ -29,4 +29,4 @@ const reactElement = {
 const mainContainer= document.getElementById('root')
 
 
-customRander(reactElement, mainContainer)
+customRender(reactElement, mainContainer)
