@@ -26,7 +26,8 @@
 
 - Setup Tailwind CSS with React and Vite
     - **Install dependencies**:
-      ```bash
+        
+        ```
         npm install -D tailwindcss postcss autoprefixer
         npx tailwindcss init -p
 
@@ -41,14 +42,20 @@
         @tailwind base;
         @tailwind components;
         @tailwind utilities;
-
         npm run dev
+        ```
 
 - Today, I learned to create a custom version of React to gain a deeper understanding of how React operates under the hood. In `04_custom_react.js`, we access the HTML DOM directly and define an object that consists of types, props, and other attributes. This object is then passed to a custom `render` function, similar to how React's render process works.
 
 - Our custom `render` function creates DOM elements based on these objects, assigns various attributes, and finally appends the elements to the DOM. This demonstrates the basic mechanism of React: using objects to represent UI components, rendering them into the DOM, and updating elements as needed. Through this process, we get a simplified but insightful look at React's virtual DOM and rendering principles.
 
-## Day 4
+## Day 4 
 
- 
-  
+- Let's see what are ar different **`Hooks`** we can learn with `Password generator` project
+
+    -  **`useCallback`**
+useCallback is a React Hook that lets you cache a function definition between re-renders.
+    - It allows you to "remember" a function so you don’t have to create a new one every time your component updates.
+
+        ```
+        const cachedFn = useCallback(fn, dependencies)
