@@ -48,5 +48,7 @@
 
 - Our custom `render` function creates DOM elements based on these objects, assigns various attributes, and finally appends the elements to the DOM. This demonstrates the basic mechanism of React: using objects to represent UI components, rendering them into the DOM, and updating elements as needed. Through this process, we get a simplified but insightful look at React's virtual DOM and rendering principles.
 
+## Day 4
 
+ 
   
