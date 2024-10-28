@@ -59,3 +59,71 @@ useCallback is a React Hook that lets you cache a function definition between re
 
         ```
         const cachedFn = useCallback(fn, dependencies)
+
+## Day 5 (More about Hooks)
+
+
+### 1. useEffect Hook
+The `useEffect` hook lets you synchronize a component with external components, APIs, or other resources. It manages side effects in functional components, like fetching data, setting up subscriptions, and updating the DOM.
+
+- **Usage**:
+  ```jsx
+  import { useEffect } from 'react';
+
+  useEffect(() => {
+    // Side effect logic, e.g., fetching data
+    return () => {
+      // Cleanup function (optional)
+    };
+  }, [dependencies]); // Dependencies array controls re-runs
+  ```
+
+- **Key Points**:
+  - Syncs component with external data or states.
+  - Runs on mount and re-runs when dependencies change.
+  - Includes an optional cleanup function for removing listeners or canceling requests.
+
+---
+
+### 2. useCallback Hook
+The `useCallback` hook helps optimize the app by caching functions, avoiding re-creation of function instances on each render.
+
+- **Usage**:
+  ```jsx
+  import { useCallback } from 'react';
+
+  const memoizedCallback = useCallback(() => {
+    // Cached function logic here
+  }, [dependencies]); // Only re-caches if dependencies change
+  ```
+
+- **Key Points**:
+  - Caches functions when dependencies remain unchanged.
+  - Helps prevent unnecessary re-renders, especially for functions passed as props.
+  - Improves performance by reducing re-computations.
+
+---
+
+### 3. onChange Function in Password Generator Project
+The `onChange` function captures user input changes in your Password Generator project. It typically works alongside `useState` and `useEffect` to manage component state and update the UI based on user actions.
+
+- **Usage**:
+  ```jsx
+  const handleChange = (event) => {
+    // Logic to update state on input change
+  };
+
+  return <input type="text" onChange={handleChange} />;
+  ```
+
+- **Key Points**:
+  - Captures and handles user input in real-time.
+  - Works with `useState` to update password state.
+  - Can be combined with `useEffect` to react to state changes dynamically.
+
+---
+
+### Summary
+- **useEffect**: Manages side effects; reruns on dependency changes.
+- **useCallback**: Caches functions for optimized performance.
+- **onChange**: Handles real-time user input, crucial for projects like a Password Generator.
