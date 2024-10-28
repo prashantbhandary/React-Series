@@ -55,7 +55,7 @@
 
     -  **`useCallback`**
 useCallback is a React Hook that lets you cache a function definition between re-renders.
-    - It allows you to "remember" a function so you don’t have to create a new one every time your component updates.
+    - It allows you to "remember" a function so you don’t have to create a new one every time your component updates.3ww
 
         ```
         const cachedFn = useCallback(fn, dependencies)
