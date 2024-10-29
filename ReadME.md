@@ -127,3 +127,5 @@ The `onChange` function captures user input changes in your Password Generator p
 - **useEffect**: Manages side effects; reruns on dependency changes.
 - **useCallback**: Caches functions for optimized performance.
 - **onChange**: Handles real-time user input, crucial for projects like a Password Generator.
+
+# Day 6 (Custom hooks)
