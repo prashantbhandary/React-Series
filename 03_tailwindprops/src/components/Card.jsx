@@ -11,7 +11,7 @@ function Card({username,btnText="visit me"}) {
                     </div>
                     <div className="ml-4">
                         <h2 className="text-xl font-bold text-gray-900">{username}</h2>
-                        <p className="text-gray-600">user@example.com</p>
+                        <p className="text-gray-600">prashant@example.com</p>
                     </div>
                 </div>
                 <div className="mt-4">
